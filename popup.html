@@ -1,13 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Word Cloud</title>
+      <title>PDF scholar</title>
+      <script src="jquery-3.1.0.min.js">
+
+      </script>
+    <style>
+    .button {
+      background-color: blue; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    </style>
   </head>
   <body>
-	<p >number of words: </p>
-	<p id = "num"></p>
-	<p >Approximate reading time: </p>
-	<p id = "time"></p>
-	<script type="text/javascript" src = "popup.js"></script>
-</body>
+        <div id="exbutton">
+          <button id="clickme" class="button" >Get Insights</button>
+        </div>
+        <div id="message">
+        </div>
+
+    <script type="text/javascript" src="popup.js" charset="utf-8"></script>
+  </body>
 </html>

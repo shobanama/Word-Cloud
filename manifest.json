@@ -1,29 +1,19 @@
-  {
-    "name": "Word Cloud",
-    "description" : "Word Cloud creator for .csv files",
-    "version": "0.1",
-    "manifest_version": 2,
-	"icons": {
-		"16": "16.png",
-		"32": "32.png",
-		"48": "48.png",
-		"128": "128.png"
-	},
-	"browser_action":{
-		"default_popup": "popup.html"
-	},
-	"permissions": [
-		"activeTab",
-		"tabs", 
-        "<all_urls>"
-	],
-	"content_scripts":[
-    {
-      "matches": ["<all_urls>"], 
-      "js": ["get_text.js"]
-    }
-    ] 
+{
+  "manifest_version": 2,
 
+  "name": "PDF Scholar",
+  "description": "it gives the insight of pdf",
+  "permissions": ["activeTab", "http://127.0.0.1:5000/"],
+  "version": "1.0",
+  "icons": {
+    "128": "128.png",
+    "48": "48.png",
+    "32": "32.png",
+    "16": "16.png"
+  },
+
+  "browser_action": {
+    "default_icon": "32.png",
+    "default_popup": "popup.html"
   }
-  
-  
+}
